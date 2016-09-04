@@ -1,0 +1,54 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+
+  <!-- alterando a cor do header-->
+    <ion-nav-bar class="ng-class:{home:home2,noticias:noticias2,esporte:esporte2,politica:politica2,fotos:fotos2,saude:saude2,negocio:negocio2,mulher:mulher2,news:pagina2}">
+
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear button-light ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+   
+    <ion-content>
+    <img src="img/Logo-PesqueiraFuxico1.jpg" class="imagemLogo">
+      <ion-list>
+
+      <!-- <ion-item menu-close ng-click="login()">
+          Login
+        </ion-item>-->
+        <ion-item menu-close href="#/app/Home" ng-click="home()">
+          Home
+        </ion-item>
+        <ion-item menu-close href="#/app/noticias" ng-click="noticias()">
+          Noticías
+        </ion-item>
+        <ion-item menu-close href="#/app/esporte" ng-click="esporte()">
+          Esportes
+        </ion-item>
+        <ion-item menu-close href="#/app/politica" ng-click="politica()">
+          Política
+        </ion-item>
+        <ion-item menu-close href="#/app/fotos" ng-click="fotos()">
+          Fotos e videos
+        </ion-item>
+        <ion-item menu-close href="#/app/saude" ng-click="saude()">
+          Saúde
+        </ion-item>
+        <ion-item menu-close href="#/app/negocio" ng-click="negocio()">
+          Negócios
+        </ion-item>
+        <ion-item menu-close href="#/app/mulher" ng-click="mulher()">
+          Mulher
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

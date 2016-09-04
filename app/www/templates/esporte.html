@@ -1,0 +1,9 @@
+<ion-view view-title="Esporte">
+  <ion-content>
+    <ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide ng-repeat="pega in lista.posts">
+    <div class="box blue"><img src="{{pega.thumbnail}}" class="imagemCapa"></div>
+  </ion-slide>
+</ion-slide-box>
+  </ion-content>
+</ion-view>

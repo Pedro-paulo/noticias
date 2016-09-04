@@ -1,0 +1,19 @@
+<ion-view view-title="Notícias">
+  <ion-content>
+     <ion-slide-box on-slide-changed="slideHasChanged($index)">
+  <ion-slide ng-repeat="pega in lista.posts">
+    <div class="box blue"><img src="{{pega.thumbnail}}" class="imagemCapa"></div>
+  </ion-slide>
+</ion-slide-box>
+
+<div class="card">
+  		<div class="item item-text-wrap" ng-repeat="pagina in lista.posts">
+  		
+  		<a href="#/app/Home/{{pagina.id}}" ng-click ="news($index)"><h3>{{pagina.date}}</h3>
+  		<img src="{{pagina.thumbnail}}" class="capa"></a>
+  		
+   		 {{pagina.title}}
+  		</div>
+	</div>
+  </ion-content>
+</ion-view>
